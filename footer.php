@@ -95,9 +95,11 @@
 	var prpr_visibility = document.querySelector('.prpr');
 	function hide_live2d(){
 		if(false == prpr_visibility.hidden){
+			app.view.hidden = true;
 			prpr_visibility.hidden = true;
 			document.querySelector('.hide-live2d').querySelector('.keys').innerHTML = 'Show';
 		}else{
+			app.view.hidden = false;
 			prpr_visibility.hidden = false;
 			document.querySelector('.hide-live2d').querySelector('.keys').innerHTML = 'Hide';
 		}
