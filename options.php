@@ -345,13 +345,20 @@ function optionsframework_options() {
 		'std' => '',
 		'type' => 'text');
 
-	 $options[] = array(
+	$options[] = array(
 		'name' => __('视频名称', 'options_framework_theme'),
 		'desc' => __('abc.mp4 ，只需要填写视频文件名 abc 即可，多个用英文逗号隔开如 abc,efg ，无需在意顺序，因为加载是随机的抽取的 ', 'options_framework_theme'),
 		'id' => 'amv_title',
 		'std' => '',
 		'type' => 'text');
 
+    $options[] = array(
+ 		'name' => __('封面图', 'options_framework_theme'),
+ 		'desc' => __('此处留空则使用内置API（将需要随机展示的图片放入 /cover/gallery/ 目录）', 'options_framework_theme'),
+ 		'id' => 'cover_img',
+ 		'std' => '',
+ 		'type' => 'upload');
+        
 	$options[] = array(
 		'name' => __('背景图滤镜', 'akina'),
 		'id' => 'focus_img_filter',
@@ -714,27 +721,6 @@ function optionsframework_options() {
 		'id' => 'qiniu_cdn',
 		'std' => '',
 		'type' => 'text');  
-
-    $options[] = array(
-		'name' => __('Adobe Typekit ID 1', 'options_framework_theme'),
-		'desc' => __('加载 Adobe 字体，填写的是 js 文件名，请把<a href="https://typekit.com/fonts/source-han-serif-simplified-chinese">这页</a>七个字体都加入到你的 kit。免费账号有每月 2,5000 PV 的使用限制，可注册多个ID，每次随机选择一个调用，如果访问量没那么高，那么填这里第一个就OK了', 'options_framework_theme'),
-		'id' => 'adobe_id_1',
-		'std' => '',
-		'type' => 'text'); 
-
-	$options[] = array(
-		'name' => __('Adobe Typekit ID 2', 'options_framework_theme'),
-		'desc' => __('可留空，如果仅填前两个ID，那么随机到此 ID 的概率是1/3，随机到 ID 1 的概率是2/3', 'options_framework_theme'),
-		'id' => 'adobe_id_2',
-		'std' => '',
-		'type' => 'text'); 
-
-	$options[] = array(
-		'name' => __('Adobe Typekit ID 3', 'options_framework_theme'),
-		'desc' => __('可留空，如果三个都填写，那么三个 ID 随机调用，概率各为 1/3', 'options_framework_theme'),
-		'id' => 'adobe_id_3',
-		'std' => '',
-		'type' => 'text'); 
         
     $options[] = array(
 		'name' => __('开启 jsDelivr 测试？', 'options_framework_theme'),
@@ -757,7 +743,7 @@ function optionsframework_options() {
         
     $options[] = array(
     'name' => __('关于', 'options_framework_theme'),
-    'desc' => __('Theme Sakura v3.0.7  |  <a href="https://2heng.xin/theme-sakura/">主题说明</a>  |  <a href="https://github.com/mashirozx/Sakura/">源码</a>', 'options_framework_theme'),
+    'desc' => __('Theme Sakura v'.SAKURA_VERSION.'  |  <a href="https://2heng.xin/theme-sakura/">主题说明</a>  |  <a href="https://github.com/mashirozx/Sakura/">源码</a>', 'options_framework_theme'),
     'id' => 'theme_intro',
     'std' => '',
     'type' => 'typography ');
@@ -859,5 +845,19 @@ function optionsframework_options() {
 		'id' => 'login_bg',
 		'type' => 'upload');
         
+    $options[] = array(
+ 		'name' => __('后台登陆界面logo', 'options_framework_theme'),
+ 		'desc' => __('用于登录界面显示', 'options_framework_theme'),
+ 		'id' => 'logo_img',
+ 		'std' => $imagepath.'mashiro-logo-s.png',
+ 		'type' => 'upload');
+        
+    $options[] = array(
+		'name' => __('时区调整', 'options_framework_theme'),
+		'desc' => __('如果评论出现时差问题在这里调整，填入一个整数，计算方法：实际时间=显示错误的时间-你输入的整数（单位：小时）', 'options_framework_theme'),
+		'id' => 'time_zone_fix',
+		'std' => '0',
+		'type' => 'text');
+ 
 	return $options;
 }

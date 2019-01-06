@@ -7,7 +7,7 @@
  * @package Sakura
  */
  
-define( 'SAKURA_VERSION', '3.0.8' );
+define( 'SAKURA_VERSION', '3.1.0' );
 
 //ini_set('display_errors', true);
 //error_reporting(E_ALL);   
@@ -169,6 +169,7 @@ add_action( 'after_setup_theme', 'akina_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function sakura_scripts() {
+    wp_enqueue_script( 'share-js', 'https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.7/js/src/13.social-share.min.js', array(), SAKURA_VERSION, true );
     if(akina_option('jsdelivr_cdn_test')){ 
         wp_enqueue_script( 'js_lab', 'https://pages.shino.cc/cdn/js/lib.js', array(), SAKURA_VERSION, true );
     } else { 
@@ -758,6 +759,7 @@ function custom_html() {
 	$(document).ready(function(){
 		$( \'<p><div id="verification-slider"><div id="slider"><div id="slider_bg"></div><span id="label">»</span><span id="labelTip">Slide to Verificate</span></div><input type="hidden" name="verification" value="verification" /></div><p>\' ).insertBefore( $( ".submit" ) );
 		$(\'form\').attr(\'onsubmit\',\'return verificationOK();\');
+        $(\'a\').attr(\'style\',\'background-image: url('.akina_option('logo_img').'); \');
 		$(".forgetmenot").replaceWith(\'<p class="forgetmenot">Remember Me<input name="rememberme" id="rememberme" value="forever" type="checkbox"><label for="rememberme" style="float: right;margin-top: 5px;transform: scale(2);margin-right: -10px;"></label></p>\');
 	});
 	</script>';
