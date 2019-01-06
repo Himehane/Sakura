@@ -85,8 +85,7 @@
 </div>
 <?php } ?>
 <div class="prpr">
-				<div class="mashiro-tips"></div>
-				<canvas id="live2d" class="live2d"></canvas>
+	<div class="mashiro-tips"></div>
 </div>
 <div class="changeSkin-gear no-select">
     <div class="keys">
