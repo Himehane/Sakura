@@ -90,7 +90,13 @@
 </div>
 <div class="live2d-tool hide-live2d no-select" onclick="hide_live2d()"><div class="keys">Hide</div></div>
 <script type="text/javascript" src="https://himehane.club/wp-content/plugins/live2d/loadModel.js"></script>
-<script>loadModel(modelPath);</script>
+<script>
+	if(!(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))){
+		loadModel(modelPath);
+	}else{
+		document.querySelector('.live2d-tool').hidden = true;		
+	}
+</script>
 <script>
 	var prpr_visibility = document.querySelector('.prpr');
 	function hide_live2d(){
