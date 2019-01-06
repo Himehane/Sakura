@@ -84,6 +84,10 @@
 <script type="text/javascript"><?php echo akina_option('site_statistics'); ?></script>
 </div>
 <?php } ?>
+<div class="prpr">
+				<div class="mashiro-tips"></div>
+				<canvas id="live2d" class="live2d"></canvas>
+</div>
 <div class="changeSkin-gear no-select">
     <div class="keys">
         <span id="open-skinMenu">
