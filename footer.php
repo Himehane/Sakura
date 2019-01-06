@@ -89,6 +89,7 @@
 	<canvas id="live2d" class="live2d"></canvas>
 </div>
 <script type="text/javascript" src="https://himehane.club/wp-content/plugins/live2d/loadModel.js"></script>
+<script>loadModel(modelPath)</script>
 <div class="changeSkin-gear no-select">
     <div class="keys">
         <span id="open-skinMenu">
