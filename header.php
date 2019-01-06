@@ -123,5 +123,5 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 		    <div id="content" class="site-content">
 			<div class="prpr">
 				<div class="mashiro-tips"></div>
-				<canvas id="live2d" class="live2d"><canvas>
+				<canvas id="live2d" class="live2d"></canvas>
 			</div>
