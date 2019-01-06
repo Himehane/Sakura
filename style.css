@@ -6409,7 +6409,7 @@ input[type=radio]:checked:before {
     width: 250px;
     height: auto;
     min-height: 70px;
-    margin: -20px 20px;
+    margin: -60px 20px;
     padding: 5px 10px;
     border-radius: 12px;
     box-sizing: border-box;
