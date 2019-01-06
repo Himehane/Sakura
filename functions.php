@@ -182,6 +182,7 @@ function sakura_scripts() {
     wp_enqueue_script('live2dcubismframework', 'https://cdn.himehane.club/framework/live2dcubismframework.js', '', '', false);
     wp_enqueue_script('live2dcubismpixi', 'https://cdn.himehane.club/framework/live2dcubismpixi.js', '', '', false);
     wp_enqueue_script('loadModel', 'https://himehane.club/wp-content/plugins/live2d/loadModel.js', '', '', true);
+    wp_enqueue_script('waifu', 'https://himehane.club/wp-content/plugins/live2d/waifu/waifu-tips.js', '', '', true);
     wp_enqueue_script( 'app', get_template_directory_uri() . '/js/sakura-app.js', array(), SAKURA_VERSION, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
