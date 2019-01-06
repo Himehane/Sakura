@@ -121,4 +121,4 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 			</header><!-- #masthead -->
 			<?php the_headPattern(); ?>
 		    <div id="content" class="site-content">
-			<div class="waifu"></div>
+			<div class="prpr"></div>
