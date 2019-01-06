@@ -88,8 +88,21 @@
 	<div class="mashiro-tips"></div>
 	<canvas id="live2d" class="live2d"></canvas>
 </div>
+<div class="live2d-tool hide-live2d no-select" onclick="hide_live2d()"><div class="keys">Hide</div></div>
 <script type="text/javascript" src="https://himehane.club/wp-content/plugins/live2d/loadModel.js"></script>
-<script>loadModel(modelPath)</script>
+<script>loadModel(modelPath);</script>
+<script>
+	var prpr_visibility = document.querySelector('.prpr');
+	function hide_live2d(){
+		if(false == prpr_visibility.hidden){
+			prpr_visibility.hidden = true;
+			document.querySelector('.hide-live2d').querySelector('.keys').innerHTML = 'Show';
+		}else{
+			prpr_visibility.hidden = false;
+			document.querySelector('.hide-live2d').querySelector('.keys').innerHTML = 'Hide';
+		}
+	}
+</script>
 <div class="changeSkin-gear no-select">
     <div class="keys">
         <span id="open-skinMenu">
