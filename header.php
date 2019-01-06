@@ -121,4 +121,6 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 			</header><!-- #masthead -->
 			<?php the_headPattern(); ?>
 		    <div id="content" class="site-content">
-			<div class="prpr"></div>
+			<div class="prpr">
+				<div class="mashiro-tips"></div>
+			</div>
