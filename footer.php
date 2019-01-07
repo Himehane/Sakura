@@ -90,6 +90,7 @@
 </div>
 <div class="live2d-tool hide-live2d no-select" onclick="hide_live2d()"><div class="keys">Hide</div></div>
 <script type="text/javascript" src="https://himehane.club/wp-content/plugins/live2d/loadModel.js"></script>
+<script type="text/javascript" src="https://himehane.club/wp-content/plugins/live2d/waifu/waifu-tips.js"></script>
 <script>
 	if(!(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))){
 		loadModel(modelPath);
