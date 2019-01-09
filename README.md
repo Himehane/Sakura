@@ -1,12 +1,11 @@
+为方便我的云主机拉去代码，而不破坏原有分支，我选择切换新分支去本地调整代码，欢迎大家去支持原作者！
+我的网站 ：<https://himehane.club/>
+
+
+# 原版简介
 Sakura🌸: A Wonderful WordPress Theme
 ===
 
-![Sakura](https://view.moezx.cc/images/2018/05/26/sakura.png)
-
-![PHP version from PHP-Eye](https://img.shields.io/php-eye/symfony/symfony.svg?style=flat-square)
-[![GitHub release](https://img.shields.io/github/release/mashirozx/Sakura.svg?style=flat-square)](https://github.com/mashirozx/Sakura/releases/latest)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/mashirozx/Sakura/latest.svg?style=flat-square)](https://github.com/mashirozx/Sakura/commits/)
-[![](https://data.jsdelivr.com/v1/package/gh/moezx/cdn/badge)](https://www.jsdelivr.com/package/gh/moezx/cdn)
 
 在 Louie 基于 Fuzzz 的 [Akina](http://www.akina.pw/themeakina) 主题修改的主题 [Siren](https://github.com/louie-senpai/Siren) 基础上三次修改 =.=
 
@@ -17,9 +16,3 @@ Sakura🌸: A Wonderful WordPress Theme
 主题使用说明见：<https://2heng.xin/theme-sakura/>
 
 希望你喜欢！
-
-### 打赏支持~
-[微信支付](https://view.moezx.cc/images/2018/05/28/WeChanQR.png) | [支付宝](https://view.moezx.cc/images/2018/05/28/AliPayQR.jpg) | [PayPal](https://paypal.me/mashirozx)
-
-### 需要服务器吗？
-<a href="https://www.vultr.com/?ref=7674346"><img src="https://www.vultr.com/media/banner_3.png" width="300" height="250"></a>
