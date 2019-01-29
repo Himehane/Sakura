@@ -175,7 +175,6 @@ function sakura_scripts() {
     } else { 
         wp_enqueue_script( 'js_lib', 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@' . SAKURA_VERSION . '/cdn/js/lib.min.js', array(), SAKURA_VERSION, true );
     }
-    
     //添加新live2d段落
     wp_enqueue_script('pixi', 'https://cdn.himehane.club/pixi/pixi.min.js', '', '', true);
     wp_enqueue_script('live2dcubismcore', 'https://himehane.club/wp-content/plugins/live2d/core/live2dcubismcore.min.js', '', '', true);
@@ -183,7 +182,6 @@ function sakura_scripts() {
     wp_enqueue_script('live2dcubismpixi', 'https://cdn.himehane.club/framework/live2dcubismpixi.js', '', '', true);
     wp_enqueue_script('loadModel', 'https://himehane.club/wp-content/plugins/live2d/loadModel.js', '', '', true);
     wp_enqueue_script('waifu-tips','https://himehane.club/wp-content/plugins/live2d/waifu/waifu-tips.js', '', '', true);
-
     if (akina_option('app_no_jsdelivr_cdn')) {
         wp_enqueue_style( 'saukra_css', get_stylesheet_uri(), array(), SAKURA_VERSION );
         wp_enqueue_script( 'app', get_template_directory_uri() . '/js/sakura-app.js', array(), SAKURA_VERSION, true );
