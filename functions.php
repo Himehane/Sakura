@@ -175,6 +175,7 @@ function sakura_scripts() {
     } else { 
         wp_enqueue_script( 'js_lib', 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@' . SAKURA_VERSION . '/cdn/js/lib.min.js', array(), SAKURA_VERSION, true );
     }
+    
     //添加新live2d段落
     wp_enqueue_script('pixi', 'https://cdn.himehane.club/pixi/pixi.min.js', '', '', true);
     wp_enqueue_script('live2dcubismcore', 'https://himehane.club/wp-content/plugins/live2d/core/live2dcubismcore.min.js', '', '', true);
