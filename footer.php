@@ -34,6 +34,12 @@
 						<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
 						Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
 					</span>
+					<span style="color: #b9b9b9;">
+						&copy; 2019 姬羽的Blog <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备19001320号-1</a>|				
+						<div style="width:300px;margin:0 auto; padding:20px 0;">
+		 					<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=62090202000124" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/wp-content/uploads/beian_img.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">甘公网安备 62090202000124号</p></a>
+		 				</div>
+					</span>
 				</p>
 			</div>
 		</div><!-- .site-info -->
