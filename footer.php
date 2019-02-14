@@ -98,7 +98,7 @@
 <div class="live2d-tool hide-live2d no-select" onclick="hide_live2d()"><div class="keys">Hide</div></div>
 <script>
 	if(!(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))){
-		loadModel(modelPath);
+		loadModel();
 	}else{
 		document.querySelector('.live2d-tool').hidden = true;		
 	}
@@ -107,9 +107,11 @@
 	var prpr_visibility = document.querySelector('.prpr');
 	function hide_live2d(){
 		if(false == prpr_visibility.hidden){
+			app.stage.visible = false;
 			prpr_visibility.hidden = true;
 			document.querySelector('.hide-live2d').querySelector('.keys').innerHTML = 'Show';
 		}else{
+			app.stage.visible = true;
 			prpr_visibility.hidden = false;
 			document.querySelector('.hide-live2d').querySelector('.keys').innerHTML = 'Hide';
 		}
