@@ -120,7 +120,7 @@
 		}
 	}
 	function switch_model(){
-		showMessage("暂不支持该功能哦！", 5000);
+		
 	}
 </script>
 <div class="changeSkin-gear no-select">
