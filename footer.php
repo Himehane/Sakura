@@ -96,6 +96,7 @@
 	<canvas id="live2d" class="live2d"></canvas>
 </div>
 <div class="live2d-tool hide-live2d no-select" onclick="hide_live2d()"><div class="keys">Hide</div></div>
+<div class="live2d-tool switch-live2d no-select" onclick="switch_model()"><div class="keys">Switch</div></div>
 <script>
 	if(!(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))){
 		loadModel();
@@ -107,14 +108,19 @@
 	var prpr_visibility = document.querySelector('.prpr');
 	function hide_live2d(){
 		if(false == prpr_visibility.hidden){
-			app.stage.visible = false;
+			app.stop();
+			app.view.hidden = true;
 			prpr_visibility.hidden = true;
 			document.querySelector('.hide-live2d').querySelector('.keys').innerHTML = 'Show';
 		}else{
-			app.stage.visible = true;
+			app.start();
+			app.view.hidden = false;
 			prpr_visibility.hidden = false;
 			document.querySelector('.hide-live2d').querySelector('.keys').innerHTML = 'Hide';
 		}
+	}
+	function switch_model(){
+		showMessage("暂不支持该功能哦！", 5000);
 	}
 </script>
 <div class="changeSkin-gear no-select">
