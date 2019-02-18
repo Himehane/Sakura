@@ -1321,6 +1321,7 @@ function excerpt_length($exp) {
         /*
          * To use mb_substr() function, you should uncomment "extension=php_mbstring.dll" in php.ini
          */
+        print_r('aaaaa');
         $exp = mb_substr($exp, 0, 80);
     }
 	return $exp;
