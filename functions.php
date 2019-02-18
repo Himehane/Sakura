@@ -1315,7 +1315,7 @@ function GBsubstr($string, $start, $length) {
 }
  
 function excerpt_length($exp) {
-    if (!function_exists(mb_substr)) {
+    if (!function_exists('mb_substr')) {
         $exp = GBsubstr($exp, 0, 80);
     } else {
         /*
