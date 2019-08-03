@@ -18,4 +18,6 @@ Sakura🌸: A Wonderful WordPress Theme
 
 本仓库国内镜像：<https://gitee.com/mashirozx/Sakura>
 
+主题交流群：860262481
+
 希望你喜欢！
