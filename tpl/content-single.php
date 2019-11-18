@@ -31,7 +31,8 @@
 	</div><!-- .entry-content -->
 	<?php the_reward(); ?>
 	<footer class="post-footer">
-	<div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"  target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+	<!-- 由于相关要求暂时取消连接-->
+	<div class="post-lincenses"><a href=""  target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh</a></div>
 	<div class="post-tags">
 		<?php if ( has_tag() ) { echo '<i class="iconfont icon-tags"></i> '; the_tags('', ' ', ' ');}?>
 	</div>
