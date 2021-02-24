@@ -37,7 +37,7 @@
 					</span>
 					</br>
 					<span style="color: #b9b9b9;">
-						&copy; 2021 姬羽的Blog <a href="http://www.miitbeian.gov.cn/" target="_blank"></a>
+						&copy; 2021 我的技术分享乡 <a href="http://beian.miit.gov.cn" target="_blank">陇ICP备2021000538号</a>
 					</span>		
 						<div style="width:300px;margin:0 auto; padding:20px 0;">
 		 					<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=62090202000124" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/wp-content/uploads/beian_img.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">甘公网安备 62090202000124号</p></a>
